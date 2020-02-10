@@ -6,6 +6,6 @@ value = cursor.fetchall()
 cursor.close()
 print(type(value))
 for tp in value:
-    print(tp[1])
+    print(tp)
 
 
