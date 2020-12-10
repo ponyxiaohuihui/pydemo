@@ -1,5 +1,8 @@
 import sqlite3
-conn = sqlite3.connect('C:\codes\db.db3')
+import sys
+
+print(sys.argv[1])
+conn = sqlite3.connect(sys.argv[1])
 cursor = conn.cursor()
 cursor.execute('select * from pwdlist')
 value = cursor.fetchall()
